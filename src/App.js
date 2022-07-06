@@ -1,4 +1,4 @@
-import Planner from "./components/planner";
+import Planner from "./views/planner";
 
 function App() {
   return (
