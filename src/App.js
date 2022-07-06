@@ -1,13 +1,18 @@
 import Navbar from "./components/navbar";
-import Planner from "./views/planner";
+import { BrowserRouter } from 'react-router-dom';
+
+import Content from "./routes/routes";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />  
-      <Planner/>
+      <BrowserRouter>
+        <Navbar />
+        <Content />
+      </BrowserRouter>
     </div>
   );
 }
+
 
 export default App;

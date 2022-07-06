@@ -92,9 +92,9 @@ const Navbar = () => {
         <span />
       </Hamburger>
       <Menu isOpen={isOpen}>
-        <MenuLink href="">Our Work</MenuLink>
+        <MenuLink href="/">Dash</MenuLink>
+        <MenuLink href="/planner">Planner</MenuLink>
         <MenuLink href="">About</MenuLink>
-        <MenuLink href="">Careers</MenuLink>
         <MenuLink href="">Contact</MenuLink>
       </Menu>
     </Nav>
