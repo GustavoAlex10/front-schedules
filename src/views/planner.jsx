@@ -15,7 +15,7 @@ const Planner = () => {
         daymap.push(i)
     }
 
-    for (let i = 1; i < days; ++i) {
+    for (let i = 1; i < 4; ++i) {
         notifay.push(i)
     }
 
@@ -33,6 +33,7 @@ const Planner = () => {
                         })
                     }
                 </CardPlanner >
+                <Text>Schedules</Text>
                 <Notifications>
                     {
                         notifay.map((a, i) => {

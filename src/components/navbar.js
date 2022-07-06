@@ -36,7 +36,7 @@ const Logo = styled.a`
   color: white;
   text-decoration: none;
   font-weight: 800;
-  font-size: 10px;
+  font-size: 15px;
 
   span {
     font-weight: 300;
