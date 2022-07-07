@@ -2,6 +2,9 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Planner from '../views/planner';
 import Dash from '../views/dash';
+import Payment from '../views/payments';
+import EmployeeRegistration from '../views/employeeRegistration';
+
 
 
 const Content = ({ props }) => {
@@ -12,6 +15,9 @@ const Content = ({ props }) => {
             <Routes>
                 <Route path='/' element={<Dash />} />
                 <Route path='/planner' element={<Planner />} />
+                <Route path='/payments' element={<Payment />} />
+                <Route path='/employeeRegister' element={<EmployeeRegistration />} />
+                
             </Routes>
         </div>
     )

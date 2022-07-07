@@ -1,71 +1,68 @@
 import React from "react";
-import { Container } from '../components/container';
-import { Recomendations, RecomendationsText, Welcome, WelcomeText, WelcomeTextName } from "../components/welcome";
+import { Container, ContainerStatus } from '../components/container';
+import { Recomendations, RecomendationsText, SecondNavbar, SecondNavButton, SecondNavAction, ButtonAvancar, GroupButtons, ButtonRetro } from "../components/welcome";
 import { Card, HeaderCard, Text } from '../components/card';
-import { ContainerRecomendations, CardRecomendations, TextRecomendations } from '../components/cardRecomendations';
-import { Footer, Items, ContainerItems } from '../components/footer';
+import { Notifications } from "../components/notifications";
+import {
+    Subscription, TextSubscription, SubStatus, TextHolderSubs,
+    AreaTextNotifications
+} from "../components/subscriptions";
 
 const Dash = () => {
 
-    const history = [];
+    const notifay = [];   
 
-    for (let i = 1; i < 4; ++i) {
-        history.push(i)
+    for (let i = 1; i < 20; ++i) {
+        notifay.push(i)
     }
+
+    
 
     return (
         <>
             <Container>
-                <Welcome>
-                    <WelcomeText>Good Morning!</WelcomeText>
-                    <WelcomeTextName>Gustavo</WelcomeTextName>
-                </Welcome>
+                <SecondNavbar>
+                    <SecondNavButton>Selecionar o dia</SecondNavButton>
+                    <GroupButtons>
+                        <ButtonRetro>r</ButtonRetro>                        
+                        <SecondNavAction>Hoje</SecondNavAction>
+                        <ButtonAvancar>a</ButtonAvancar>
+                    </GroupButtons>
+
+                </SecondNavbar>
                 <Card>
                     <HeaderCard>
-                        <Text>OnGoing : </Text>
-                        <Text>UpComing : </Text>
+                        <Text>Solicitações de Agendamento</Text>
+                        <Text>25</Text>
                     </HeaderCard>
                 </Card>
                 <Recomendations>
-                    <RecomendationsText>Recommendations: </RecomendationsText>
+                    <RecomendationsText>QUARTA FEIRA 07/07/2022: </RecomendationsText>
                 </Recomendations>
-                <ContainerRecomendations>
+                <Notifications>
                     {
-                        history.map((a, i) => {
+                        notifay.map((a, i) => {
                             return (
-                                <CardRecomendations key={i}>
-                                    <TextRecomendations>Recomenda</TextRecomendations>
-                                </CardRecomendations>
+                                <Subscription key={i}>
+                                    <AreaTextNotifications>
+                                        <TextSubscription>
+                                            Mark Hunter
+                                        </TextSubscription>
+                                        <TextHolderSubs>
+                                            Mark Hunter
+                                        </TextHolderSubs>
+                                    </AreaTextNotifications>
+                                    <ContainerStatus>
+                                    <SubStatus>
+                                        09h00
+                                    </SubStatus>
+                                    </ContainerStatus>
+                                </Subscription>
                             )
                         })
                     }
-                </ContainerRecomendations>
-                <Recomendations>
-                    <RecomendationsText>Quick Access: </RecomendationsText>
-                </Recomendations>
-                <ContainerRecomendations>
-                    {
-                        history.map((a, i) => {
-                            return (
-                                <CardRecomendations key={i}>
-                                    <TextRecomendations>Quick</TextRecomendations>
-                                </CardRecomendations>
-                            )
-                        })
-                    }
-                </ContainerRecomendations>
+                </Notifications>
             </Container>
-            <Footer>
-                <ContainerItems >
-                    {
-                        history.map((a, i) => {
-                            return (
-                                <Items key={i}/>
-                            )
-                        })
-                    }
-                </ContainerItems>
-            </Footer>
         </>
     )
 }

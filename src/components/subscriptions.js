@@ -4,7 +4,7 @@ export const Subscription = styled.div`
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-width:300px;
+width:350px;
 height: 50px;
 background-color: #E9E8F6;
 border-radius: 10px;
@@ -34,12 +34,20 @@ export const TextHolderSubs = styled.h1`
     font-size: 10px;
 `;
 
-export const SubStatus = styled.img`
-    width: 40px;
+export const SubStatus = styled.div`
+    width: 70px;
     height: 40px;
-    background-color: orange;
+    background-color: #1565C0;
+    color: #fff;
+    font-weight: bold;
+    
     border-width: 0px;
-    border-radius: 10px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 `;
 
 export const AreaTextNotifications = styled.div`

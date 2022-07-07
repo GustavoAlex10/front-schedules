@@ -1,16 +1,70 @@
 import styled from "styled-components";
 
-export const Welcome = styled.div`
-width: 100%;
-height: 60px;
+export const SecondNavbar = styled.div`
+width: 90vw;
+height: auto;
+padding: 10px 0px 0px 0px;
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 0px 0px 50px 0px;
 `;
 
-export const WelcomeText = styled.h2`
-font-size: 10px;
+export const SecondNavButton = styled.button`
+        width: 150px;
+        height: 50px;
+
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        border-width: 0px;
+        border-radius: 5px;
+    `;
+
+    export const SecondNavAction = styled.button`
+        width: 110px;
+        height: 50px;
+
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        border-width: 0px;
+        
 `;
 
-export const WelcomeTextName = styled.h1`
-font-size: 12px;
+    export const GroupButtons = styled.button`
+        display: flex;
+        flex-direction: row;
+        border-width: 0px;
+    `;
+
+
+    export const ButtonAvancar = styled.button`
+        width: 30px;
+        height: 50px;
+        border-width: 0px;
+        border-radius: 0px 5px 5px 0px;
+        background-color: #000;
+        color: #fff;
+    `;
+
+    
+export const ButtonRetro = styled.button`
+        width: 30px;
+        height: 50px;
+        border-width: 0px;
+        border-radius: 5px 0px 0px 5px;
+        background-color: #000;
+        color: #fff;
 `;
 
 export const Recomendations = styled.div`
@@ -20,14 +74,15 @@ justify-content: center;
 align-items: center;
 
 width: 100%;
-height: 25px;
+height: auto;
 margin-top: 5px;
 overflow: hidden;
 `;
 
 export const RecomendationsText = styled.div`
-width: 100%;
-height: 100px;
+margin-top: 20px;
+font-weight: bold; 
+margin-bottom: 10px;
 `;
 
 

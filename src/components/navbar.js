@@ -23,7 +23,7 @@ const Nav = styled.div`
   align-items: center;
   flex-wrap: wrap;
 
-  background: #514869;
+  background: #000;
   position: absolute;
 
   top: 0;
@@ -83,7 +83,7 @@ const Navbar = () => {
   
   return (
     <Nav>
-      <Logo href="">
+      <Logo href="/">
         Schedules
       </Logo>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
@@ -94,8 +94,8 @@ const Navbar = () => {
       <Menu isOpen={isOpen}>
         <MenuLink href="/">Dash</MenuLink>
         <MenuLink href="/planner">Planner</MenuLink>
-        <MenuLink href="">About</MenuLink>
-        <MenuLink href="">Contact</MenuLink>
+        <MenuLink href="/payments">Payment</MenuLink>
+        <MenuLink href="/employeeRegister">Employee</MenuLink>
       </Menu>
     </Nav>
   );
