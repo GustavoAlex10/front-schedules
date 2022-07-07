@@ -96,6 +96,7 @@ const Navbar = () => {
         <MenuLink href="/planner">Planner</MenuLink>
         <MenuLink href="/payments">Payment</MenuLink>
         <MenuLink href="/employeeRegister">Employee</MenuLink>
+        <MenuLink href="/login">Login</MenuLink>
       </Menu>
     </Nav>
   );
