@@ -1,24 +1,31 @@
 import styled from "styled-components";
 
 export const Subscription = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-width:350px;
-height: 50px;
-background-color: #E9E8F6;
-border-radius: 10px;
-border-width: 0px;
-margin: 2px 10px;  
-overflow: hidden;
-padding: 5px;
-&:hover,
-&:focus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:50vw;
+    height: 100px;
+    background-color: #E9E8F6;
+    border-radius: 10px;
+    border-width: 0px;
+    margin: 2px 10px;  
+    overflow: hidden;
+    padding: 5px;
+    &:hover,
+    &:focus {
     background-color:#7C66F9;
-}
-&:active {
+    }
+    &:active {
     color: orange;
   }
+
+
+    @media screen and (max-width: 390px){
+    width: 350px;
+    height: 50px;
+    }
+
 `;
 
 export const Text = styled.h1`
@@ -27,11 +34,17 @@ export const Text = styled.h1`
 
 
 export const TextSubscription = styled.h1`  
+ @media screen and (max-width: 390px){
     font-size: 10px;
+    }
+    font-size: 15px;
 `;
 
-export const TextHolderSubs = styled.h1`  
-    font-size: 10px;
+export const TextHolderSubs = styled.h1`
+ @media screen and (max-width: 390px){
+    font-size: 10px
+    }  
+    font-size: 15px;
 `;
 
 export const SubStatus = styled.div`
@@ -40,10 +53,8 @@ export const SubStatus = styled.div`
     background-color: #1565C0;
     color: #fff;
     font-weight: bold;
-    
     border-width: 0px;
     border-radius: 5px;
-
     display: flex;
     flex-direction: row;
     align-items: center;

@@ -12,9 +12,10 @@ const Dash = () => {
 
     const notifay = [];   
 
-    for (let i = 1; i < 20; ++i) {
+    for (let i = 1; i < 5; ++i) {
         notifay.push(i)
     }
+    
 
     
 
