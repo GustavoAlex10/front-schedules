@@ -21,7 +21,7 @@ const Nav = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background: #000;
+  background: #4E7D96 ;
   position: absolute;
   top: 0;
   left: 0;

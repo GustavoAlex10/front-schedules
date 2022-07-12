@@ -5,7 +5,8 @@ import styled from "styled-components";
 export const Card = styled.div`
 width: 450px;
 height: auto;
-background: linear-gradient(90deg, rgba(82,182,254,1) 35%, rgba(97,84,254,1) 100%);
+background-color: #FF844B;
+/* background: linear-gradient(90deg, rgba(82,182,254,1) 35%, rgba(97,84,254,1) 100%); */
 border-width: 0px;
 border-radius:16px;
 text-overflow: ellipsis;

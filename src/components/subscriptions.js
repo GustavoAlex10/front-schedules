@@ -14,7 +14,7 @@ export const Subscription = styled.div`
     padding: 5px;
     &:hover,
     &:focus {
-    background-color:#7C66F9;
+    background-color:#FF844B;
     }
     &:active {
     color: orange;
@@ -50,7 +50,7 @@ export const TextHolderSubs = styled.h1`
 export const SubStatus = styled.div`
     width: 70px;
     height: 40px;
-    background-color: #1565C0;
+    background-color: #0A0D25;
     color: #fff;
     font-weight: bold;
     border-width: 0px;

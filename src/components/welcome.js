@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const SecondNavbar = styled.div`
-
 width: 50vw;
 height: auto;
 padding: 30px 0px 0px 0px;
@@ -9,23 +8,18 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 margin: 0px 0px 20px 0px;
-
-
-
-
 @media screen and (max-width: 390px) {
 width: 90vw;
 padding: 10px 0px 0px 0px;
 margin: 0px 0px 50px 0px;
 }
-
 `;
 
 export const SecondNavButton = styled.button`
 
         width: 300px;
         height: 90px;
-        background-color: #000;
+        background-color: #9FC9DD ;
         color: #fff;
         display: flex;
         flex-direction: row;
@@ -44,7 +38,7 @@ export const SecondNavButton = styled.button`
 export const SecondNavAction = styled.button`
         width: 290px;
         height: 90px;
-        background-color: #000;
+        background-color: #9FC9DD;
         color: #fff;
         display: flex;
         flex-direction: row;
@@ -75,7 +69,7 @@ export const ButtonAvancar = styled.button`
         height: 90px;
         border-width: 0px;
         border-radius: 0px 5px 5px 0px;
-        background-color: #000;
+        background-color: #9FC9DD ;
         color: #fff;
 
         @media screen and (max-width: 390px) {
@@ -92,7 +86,7 @@ export const ButtonRetro = styled.button`
         height: 90px;
         border-width: 0px;
         border-radius: 5px 0px 0px 5px;
-        background-color: #000;
+        background-color: #9FC9DD ;
         color: #fff;
 
         @media screen and (max-width: 390px) {
