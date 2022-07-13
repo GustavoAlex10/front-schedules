@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       <DataProvider>
         <BrowserRouter>
-          <Navbar />
           <Content />
         </BrowserRouter>
       </DataProvider>

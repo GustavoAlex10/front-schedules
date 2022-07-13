@@ -80,7 +80,7 @@ const Navbar = () => {
   
   return (
     <Nav>
-      <Logo href="/">
+      <Logo href="/dash">
         Schedules
       </Logo>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
@@ -89,11 +89,10 @@ const Navbar = () => {
         <span />
       </Hamburger>
       <Menu isOpen={isOpen}>
-        <MenuLink href="/">Dash</MenuLink>
+        <MenuLink href="/dash">Dash</MenuLink>
         <MenuLink href="/planner">Planner</MenuLink>
         <MenuLink href="/payments">Payment</MenuLink>
         <MenuLink href="/employeeRegister">Employee</MenuLink>
-        <MenuLink href="/login">Login</MenuLink>
       </Menu>
     </Nav>
   );

@@ -9,6 +9,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import api from '../utils/api/api'
 
+
 const initValue = {
     email: '',
     password: '',
@@ -20,7 +21,7 @@ const schema = Yup.object({
 
 const Auth = () => {
 
-    // const [ data, setData ] = useState('');
+    const [ data, setData ] = useState('');
     const [values, setValues] = useState(initValue);
 
     const { register, handleSubmit, formState: { errors } } = useForm({
